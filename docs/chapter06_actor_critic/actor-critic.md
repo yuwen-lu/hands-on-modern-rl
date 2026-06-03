@@ -471,7 +471,7 @@ loss = actor_loss + critic_loss  # = tensor(4.7994)
 | `reward`      | 1.0        | 环境返回的即时奖励                     |
 | `next_value`  | 2.0        | Critic 对下一状态的估计                |
 | `td_target`   | 2.98       | $r + \gamma V(s')$                     |
-| `td_error`    | 1.78       | $\delta = \text{td\_target} - V(s)$    |
+| `td_error`    | 1.78       | $\delta = \text{td\textunderscore{}target} - V(s)$ |
 | `actor_loss`  | 1.6310     | $-\log\pi \cdot \delta$（.detach 后）  |
 | `critic_loss` | 3.1684     | $\delta^2$                             |
 | `loss`        | 4.7994     | $L_{\text{actor}} + L_{\text{critic}}$ |

@@ -475,7 +475,7 @@ Summary of key values across the entire computation chain:
 | `reward`      | 1.0        | Immediate reward returned by the environment      |
 | `next_value`  | 2.0        | Critic's estimate of the next state               |
 | `td_target`   | 2.98       | $r + \gamma V(s')$                                |
-| `td_error`    | 1.78       | $\delta = \text{td\_target} - V(s)$               |
+| `td_error`    | 1.78       | $\delta = \text{td\textunderscore{}target} - V(s)$ |
 | `actor_loss`  | 1.6310     | $-\log\pi \cdot \delta$ (after .detach)           |
 | `critic_loss` | 3.1684     | $\delta^2$                                        |
 | `loss`        | 4.7994     | $L_{\text{actor}} + L_{\text{critic}}$            |
